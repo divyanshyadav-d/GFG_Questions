@@ -1,0 +1,32 @@
+Java Solution
+
+You can use the below code as the solution to your problem but it is not the optimized code. After some test cases, it shows the TLE.
+
+Optimize solution is written below
+
+class Solution {
+    // function to return sum of  1, 2, ... n
+    long seriesSum(int n) {
+        int a = 0;
+        while (n>0)
+        {
+            a = a+n;
+            n--;
+        }
+        return a;
+    }
+}
+
+//
+
+Optimized Solution
+
+class Solution {
+    // function to return the sum of  1, 2, ... n
+    long seriesSum(int n) {
+        long s = ((long)n*(long)(n+1))/2;
+        return s;
+    }
+}
+
+//
