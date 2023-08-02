@@ -1,0 +1,18 @@
+JAVA solution
+In this solution, we will use the concept of recursion for the printing of numbers which helps us to print numbers without using loops.
+
+
+
+class Solution
+{
+    
+  public void printNos(int N)
+    {
+        if(N==0)
+        {
+            return;
+        }
+        printNos(N-1);
+        System.out.print(N+" ");
+    }
+}
